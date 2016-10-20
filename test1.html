@@ -1,0 +1,24 @@
+<!-- saved from url=(0041)file:///C:/Users/hutao/Desktop/test1.html -->
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>JavaScript中的日期和时间函数演示</title>
+</head>
+<body>
+<script language="JavaScript">
+Document.write("现在是："&Date&" "&Time&")<BR><BR>"
+
+Document.write "今天是："&FormatDateTime(Now, vbLongDate)&" 或 "&FormatDateTime(Now, vbShortDate)&"<BR>"
+Document.write"现在时间是："&FormatDateTime(Now, vbLongTime)&" 或 "&FormatDateTime(Now, vbShortTime)&"<BR><BR>"
+
+Document.write"再过一周是："&DateAdd("d",7,Date)&"<BR>"
+Dim desdate
+desdate=DateSerial(2020,1,1)
+Docment.write"现在距离2020年元旦还有"&DateDiff("d",Now,desdate)&"天<BR>"
+</script>
+<form id="loginForm">
+   <input name="username" type="text" />
+   <input name="password" type="password" />
+   <input name="continue" type="submit" value="Login" />
+</form>
+</body>
+</html>
